@@ -7,8 +7,12 @@ $(document).ready(function() {
         var search = "Pandora&";
 
         var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-        url += '?' + search + $.param({
-          'api-key': "470411be8eaa44ef81ce85cf15e99bf8"
+        url += '?' + $.param({
+          'api-key': "470411be8eaa44ef81ce85cf15e99bf8",
+          'q': "Pandora",
+          'fq': "10",
+          'begin_date': "20150101",
+          'end_date': "20180101"
         });
 
            
